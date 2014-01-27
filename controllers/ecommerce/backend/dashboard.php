@@ -51,6 +51,16 @@ class Dashboard extends BController {
 		}
 	}
 
+	public function login()
+	{
+		// controller untuk login
+	}
+
+	public function logout()
+	{
+		// controller untuk proses logout
+	}
+
 	public function countorder($type = 'total')
 	{
 		if( $this->input->is_ajax_request() ) {
