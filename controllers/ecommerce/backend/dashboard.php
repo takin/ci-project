@@ -54,6 +54,7 @@ class Dashboard extends BController {
 	public function login()
 	{
 		// controller untuk login
+		// ini adalah modifikasian yang baru
 	}
 
 	public function logout()
