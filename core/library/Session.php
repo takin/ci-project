@@ -74,7 +74,14 @@ class CI_Session {
     */
     function destroy()
     {
-        //unset($_SESSION);
+        /**
+         * jika unset($_SESSION) menyebabkan masalah error empty session (atau semacamnya)
+         * coba di comment. saya sendiri bermasalah dengan ini, tapi setelah saya coment 
+         * masalah hilang.
+         *
+         * Akin,
+         */
+        unset($_SESSION);
         session_unset();
         if ( isset( $_COOKIE[session_name()] ) )
         {
